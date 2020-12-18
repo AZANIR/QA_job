@@ -1,13 +1,14 @@
 name: CI_test1
-
-on: 
+on:
   push:
-    branches:
-      - master
-jobs:
-  my_testing:
-    runs-on: ubuntu-latest
+  pull_request:
+    types: [opened, edited]
 
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
     steps:
-    - name: Print Hello Messaje
-      run: echo "Hello world"
+      - name: Checkout
+        with:
+          build: npm run build
+          start: npx wdio wdio.conf.js
