@@ -1,5 +1,6 @@
 const LoginPage = require('../pageobjects/login.page');
 const SecurePage = require('../pageobjects/secure.page');
+//wd_test spec
 
 describe('My Login application', () => {
     it('should login with valid credentials', () => {
@@ -11,5 +12,3 @@ describe('My Login application', () => {
             'You logged into a secure area!');
     });
 });
-
-
