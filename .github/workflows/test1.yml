@@ -11,4 +11,4 @@ jobs:
       - name: Git clone ny repo
         uses: actions/checkout@v1
       - name: List folder
-        uses: ls -la
+        uses: ls
