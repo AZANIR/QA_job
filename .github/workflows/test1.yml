@@ -10,5 +10,8 @@ jobs:
     steps:
       - name: Git clone ny repo
         uses: actions/checkout@v1
-      - name: Install
-        uses: npm install
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+        with:
+          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
+          node-version: 12.20.0
