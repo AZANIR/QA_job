@@ -10,3 +10,5 @@ jobs:
     steps:
       - name: Git clone ny repo
         uses: actions/checkout@v1
+      - name: Install
+        uses: npm install
