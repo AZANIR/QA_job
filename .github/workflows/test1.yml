@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout
-          uses: actions/checkout@v1
-        - name: Ls folder
-          uses: ls -la
+      - name: Git clone ny repo
+        uses: actions/checkout@v1
+      - name: List folder
+        uses: ls -la
